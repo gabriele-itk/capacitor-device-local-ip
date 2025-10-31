@@ -1,3 +1,3 @@
-export interface DeviceLocalIpPluginPlugin {
-  echo(options: { value: string }): Promise<{ value: string }>;
+export interface DeviceLocalIpPlugin {
+  getIpAddress(): Promise<{ ip: string | null }>;
 }

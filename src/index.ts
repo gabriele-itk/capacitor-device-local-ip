@@ -1,10 +1,9 @@
 import { registerPlugin } from '@capacitor/core';
+import type { DeviceLocalIpPlugin } from './definitions';
 
-import type { DeviceLocalIpPluginPlugin } from './definitions';
-
-const DeviceLocalIpPlugin = registerPlugin<DeviceLocalIpPluginPlugin>('DeviceLocalIpPlugin', {
-  web: () => import('./web').then((m) => new m.DeviceLocalIpPluginWeb()),
+const DeviceLocalIp = registerPlugin<DeviceLocalIpPlugin>('DeviceLocalIp', {
+  web: () => import('./web').then(m => new m.DeviceLocalIpWeb()),
 });
 
 export * from './definitions';
-export { DeviceLocalIpPlugin };
+export { DeviceLocalIp };

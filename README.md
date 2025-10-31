@@ -1,11 +1,12 @@
-# com-itk-localip
+# capacitor-device-local-ip
 
 discover ip service
 
 ## Install
 
 ```bash
-npm install com-itk-localip
+# capacitor-device-local-ip
+npm install capacitor-device-local-ip
 npx cap sync
 ```
 
